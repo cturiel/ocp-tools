@@ -1,0 +1,19 @@
+---
+global:
+  resources:
+    - RBACDefinition
+    - Namespace
+ns_all:
+  resources:
+    - rolebindings
+    - serviceaccount
+ns_infra:
+  namespace: 
+    - openshift-config
+    - openshift-marketplace
+  resources:
+    - catalogsource
+    - configmap
+    - operatorgroup
+    - secret
+    - subscription
