@@ -1,0 +1,36 @@
+---
+global:
+  resources:
+    - RBACDefinition
+    - Namespace
+    - pv
+ns_all:
+  resources:
+    - rolebindings
+    - serviceaccount
+ns_infra:
+  namespace:
+    - clusterresourceoverride
+    - default
+    - infra-audit
+    - infra-events
+    - infra-labeler
+    - infra-rbac-manager
+    - infra-utils
+    - openshift-apiserver
+    - openshift-config
+    - openshift-ingress
+    - openshift-ingress-operator
+    - openshift-machine-api
+    - openshift-marketplace
+  resources:
+    - catalogsource
+    - configmap
+    - daemonset
+    - deployment
+    - operatorgroup
+    - pod
+    - pvc
+    - secret
+    - statefulset
+    - subscription
